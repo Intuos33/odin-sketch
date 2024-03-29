@@ -6,11 +6,13 @@ function initialGrid(width, numBoxes){
     const size = width/numBoxes;
 
     for(let location = 0; location < numBoxes; location++){
-        const gridBox = document.createElement('div');
-        gridBox.style.border = '1px solid red';
-        gridBox.style.width = size + 'px';
-        gridBox.style.height = size + 'px';
-        gridContainer.appendChild(gridBox);
+        for(let vLocation = 0; vLocation < numBoxes; vLocation++){
+            const gridBox = document.createElement('div');
+            gridBox.style.border = '1px solid red';
+            gridBox.style.width = size + 'px';
+            gridBox.style.height = size + 'px';
+            gridContainer.appendChild(gridBox);
+        }
     }
 }
 
