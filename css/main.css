@@ -9,7 +9,8 @@
     width: 800px;
     height: 800px;
     margin: auto;
-    border: 1px solid black;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    gap: 0;
 }
